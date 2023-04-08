@@ -1,7 +1,10 @@
 # Gesture-Controlled-Virtual-Mouse-and-Keyboard
  
 
-A gesture-controlled virtual mouse makes it easier for people to connect with computers by utilizing hand gestures, voice commands, and eye movements. Computers seldom ever require direct contact. Static and dynamic hand gestures, voice assistance, and eye motions can be used to virtually control all input and output processes. Modern machine learning and computer vision techniques are used in the project to recognize hand gestures, voice commands, and eye movements using both internal and external cameras. The first module involves hand detection using MediaPipe's technology, while the second module involves a glove with a single color. Users can access keyboard keys by moving their fingers in the air, allowing them to work with a virtual keyboard. This is made possible through computer vision technology and artificial intelligence, using modules such as Hand Tracking, CVzone Hand Detector, and the Controller imported from the Pynput keyboard. The suggested system functions as a virtual keyboard and mouse without the need for any external devices, wires, or connections.  It uses a Convolutional Neural Network(CNN)-like model implemented by MediaPipe running on top of pybind11. It consists of two modules. The first works with your hand directly using MediaPipe’s hand detection, while the second employs a glove with a single colour. By maneuvering fingers in air to access keyboard keys, users of the visual keyboard can work in the air. This is made possible by computer vision technology and artificial intelligence. To make the virtual keyboard function, we employ a variety of modules, including the Hand Tracking and CVzone Hand Detector Modules, as well as the Controller imported from the Pynput keyboard.The suggested system will function as a virtual keyboard and mouse without the necessity of a wire or any other external device. The webcam, which is the only piece of hardware in this system, is used to record images, recognise hand gestures, eye movements, and receive voice instructions using the Pyttsx3 module.
+TThe gesture-controlled virtual mouse is an innovative technology that allows people to interact with computers without the need for physical contact. The system employs modern machine learning and computer vision techniques to detect hand gestures, voice commands, and eye movements using internal and external cameras. The system consists of two modules: the first one involves hand detection using MediaPipe's technology, while the second employs a glove with a single color. Users can control the virtual keyboard and mouse by moving their fingers in the air, which is made possible through computer vision technology and artificial intelligence. The system uses modules such as Hand Tracking, CVzone Hand Detector, and the Controller imported from the Pynput keyboard to recognize hand gestures and control input and output processes.The system functions as a virtual keyboard and mouse without the need for any external devices, wires, or connections. It employs a Convolutional Neural Network(CNN)-like model implemented by MediaPipe running on top of pybind11. The system enables users to work in the air and access keyboard keys by maneuvering fingers, making it an ideal tool for people who are physically challenged or have mobility issues. The webcam is the only piece of hardware required in this system, which is used to record images, recognize hand gestures, eye movements, and receive voice instructions using the Pyttsx3 module. The suggested system can improve the quality of life for people with disabilities or mobility issues, as it allows them to interact with computers without the need for physical contact or external devices. Overall, the gesture-controlled virtual mouse is a remarkable advancement in computer technology that has the potential to revolutionize the way people interact with computers.
+
+
+
 
 Note: Use Python version: 3.8.5
 
@@ -29,4 +32,45 @@ Note: Use Python version: 3.8.5
     - Drag and Drop
     - Multiple Item Selection
     - Volume Control
+## Procedure
+
+#### Get all items
+
+```http
+  git clone https://github.com/shriakshita/Gesture-Controlled-Virtual-Mouse-and-Keyboard.git
+```
+For detailed information about cloning [Click Here.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+Step 1:
+```http
+  conda create --name gest python=3.8.5
+```
+Step 2:
+```http
+  conda activate gest
+```
+Step 3:
+```http
+  pip install -r requirements.txt
+```
+Step 4:
+```http
+  conda install PyAudio
+
+  conda install pywin32
+```
+Step 5:
+```http
+  cd to the GitHub Repo till src folder
+```
+Command may look like: cd C:\Users\.....\Gesture-Controlled-Virtual-Mouse\src
+
+Step 6:
+For running GUI:
+```http
+  python main.py
+```
+Or to run only Gesture Recognition without the voice assisstant:
+
+Uncomment last 2 lines of Code in the file Gesture_Controller.py
 
