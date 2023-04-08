@@ -36,41 +36,49 @@ Note: Use Python version: 3.8.5
 
 #### Get all items
 
-```http
+```bash
   git clone https://github.com/shriakshita/Gesture-Controlled-Virtual-Mouse-and-Keyboard.git
 ```
 For detailed information about cloning [Click Here.](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 Step 1:
-```http
+```bash
   conda create --name gest python=3.8.5
 ```
 Step 2:
-```http
+```bash
   conda activate gest
 ```
 Step 3:
-```http
+```bash
   pip install -r requirements.txt
 ```
 Step 4:
-```http
+```bash
   conda install PyAudio
 
   conda install pywin32
 ```
 Step 5:
-```http
+```bash
   cd to the GitHub Repo till src folder
 ```
 Command may look like: cd C:\Users\.....\Gesture-Controlled-Virtual-Mouse\src
 
 Step 6:
 For running GUI:
-```http
+```bash
   python main.py
 ```
 Or to run only Gesture Recognition without the voice assisstant:
 
 Uncomment last 2 lines of Code in the file Gesture_Controller.py
+
+## Contributors
+
+| Name | Email Id    | GitHub                ||
+| :-------- | :------- | :------------------------- |--------|
+| Shri Akshita.G | [Mail](akshitagaddam25@gmail.com) | [GitHub](https://github.com/shriakshita)  |
+| Allapuram Priyadharshini | [Mail](raopriya4488@gmail.com) | [GitHub](https://github.com/priyadharshini2207)|  
+| C. Balakrishna Reddy| [Mail](balureddy9284@gmail.com) | [GitHub](https://github.com/Balakrishnaaa)|
 
